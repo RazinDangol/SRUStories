@@ -1,0 +1,84 @@
+<!-- SRUStories 
+	Team Member: Rajin Dangol
+				 Jordon Varnar
+				 Prajwal Ghimire
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SRU Stories Blog</title>
+	<!-- Linking external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<!-- header is the top bar of the page which provides menu, search and login option -->
+	<div class="header">
+		<!-- Logo of the Blog -->
+		<h3 id="logo">Sru Stories</h3>
+		<!-- Navigation menu of the blog -->
+		<div class="navigation">
+			<a href="/home">Home</a>
+			<a href="/archive">Archive</a>
+			<a href="/events">Events</a>
+			<a href="/about">About</a>
+			<!-- redirects to login page -->
+			<div class="login">
+				<a href="/login">Login</a>
+			</div>
+			<!-- Search bar with submit button -->
+			<div id="search">
+				<form action="#">
+					<input type="text" name="search-text" placeholder="Search">
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Categories section of the blog which is at the left of the page -->
+		<div class="categories">
+			<h2>Categories</h2>
+			<!-- List of categories --> 
+			<div class="categories-list">
+				<ul>
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">College Life</a></li>
+					<li><a href="#">Clubs</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Blog container which contains various blog posts -->
+		<div class="blog-container">
+			<!-- An individual blog post -->
+			<div class="blog">
+				<!-- Title of the blog -->
+				<h2 class="blog-title">Tips to be successful in college</h2>
+				<!-- Author and other detail about the blog post -->
+				<p class="blog-author">09.27.2018 / <a href="/author">RAJIN DANGOL</a> / <a href="/categories">ACADEMICS</a> </p>
+				<!-- Snippet of content of the blog post -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum... 
+					<a href="#">Read More</a><!-- Link to full blog post -->
+				</p>
+
+			</div>
+
+			<div class="blog">
+				<h2 class="blog-title">The pros/cons of living on or living off campus</h2>
+				<p class="blog-author">09.20.2018 / <a href="/author">PRAJWAL GHIMIRE</a> / <a href="/categories">COLLEGE LIFE</a> </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum... <a href="#">Read More</a>
+				</p>
+			</div>
+
+			<div class="blog">
+				<h2 class="blog-title">Ways to get involved on campus</h2>
+				<p class="blog-author">08.29.2018 / <a href="/author">JORDAN VARNER</a> / <a href="/categories">CLUBS</a> </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum... <a href="#">Read More</a>
+				</p>
+			</div>
+			<!-- Link to previous older posts -->
+			<a href="#" title="Older Post" id="older-post">Older Posts --></a>
+		</div>
+	
+</body>
+</html>

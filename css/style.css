@@ -1,0 +1,115 @@
+
+/*Changing the default font to 25px and margin to 0*/
+body{
+	font-size: 25px;
+	margin:0;
+	background-image: url("../images/rocky.jpg"); /* setting the background image to SRU Rocky */
+	background-repeat:no-repeat;/* setting the image to no repeat */
+	background-position:center;/* positioning the image to center of the page */
+}
+
+/*
+ * header specific styles 
+ */
+/* setting the background color of menu bar to green color similar to SRU website */
+.header{
+	background-color:#007055;
+	padding-top:10px;
+	height:80px;
+}
+/* 
+ * setting the h3 inside header class to specified color
+ * set padding to 0 and margin to 0 on top and down and 20px on right and left 
+ */
+.header h3{
+	color:#f2f2f2;
+	padding:0;
+	margin:0px 20px 0px 20px;
+}
+
+.header a{
+	color:#f2f2f2;
+	text-decoration:none; /* removing the link underline */
+}
+
+#logo{
+	float:left; /* floating the logo to left of the menu bar */
+	width:100px; /* setting the width of the logo to 100px */
+}
+
+/* navigation menu styles */
+.navigation a{
+	float:left;
+	text-align:center;
+	padding:14px 16px;
+}
+
+.login{
+	float: right;
+	width: 200px;
+	margin:0;
+
+}
+
+/* Search box specific styles */
+#search{
+	float:right;/* moving the box to the right of the menu bar */
+	margin:0;/* setting the margin of the box to 0*/
+	padding-top:10px; /* setting upper padding to 10 to align with other elements */
+	width:400px;
+}
+/* input box inside search id */
+#search input{
+	width:300px;
+	height: 40px;
+	border:none;/* removing the border */
+}
+/* submit button of the search box */
+#search button{
+	border:none;
+	background:#f2f2f2;
+	height:40px;
+	width: 60px;
+	font-size:15px;
+}
+
+
+/* Blog post related styles*/
+.blog-container{
+	position:relative;
+	left:300px;
+	width: 70%;
+}
+.blog{
+	border-bottom: 2px dashed; /* setting the bottom border of each blog post to 2px dashed to separate it from another blog post */
+}
+
+.blog-title{
+margin-bottom:0; /* setting margin to 0 so that there is no space between title and blog detail like authors */
+}
+
+.blog-author{
+	font-size:19px;
+	padding:0;
+	margin:0;
+}
+.blog-author a{
+	text-decoration: none;
+}
+
+/* Categories related styles*/
+.categories{
+	position:absolute;
+	left:10px;
+	width: 280px;
+	border-right: 2px solid;
+}
+
+.categories-list a {
+	text-decoration:none;
+}
+
+/* Moving the older-post to right side of the page */
+#older-post{
+	float:right;
+}
