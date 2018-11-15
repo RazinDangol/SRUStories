@@ -3,7 +3,6 @@
 body{
 	font-size: 25px;
 	margin:0;
-	background-image: url("../images/rocky.jpg"); /* setting the background image to SRU Rocky */
 	background-repeat:no-repeat;/* setting the image to no repeat */
 	background-position:center;/* positioning the image to center of the page */
 }
