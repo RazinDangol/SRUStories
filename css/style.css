@@ -13,8 +13,11 @@ body{
 /* setting the background color of menu bar to green color similar to SRU website */
 .header{
 	background-color:#007055;
-	padding-top:10px;
-	height:80px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	z-index:1; /* Setting the header infront of body content */
 }
 /* 
  * setting the h3 inside header class to specified color
@@ -26,10 +29,6 @@ body{
 	margin:0px 20px 0px 20px;
 }
 
-.header a{
-	color:#f2f2f2;
-	text-decoration:none; /* removing the link underline */
-}
 
 #logo{
 	float:left; /* floating the logo to left of the menu bar */
@@ -38,6 +37,8 @@ body{
 
 /* navigation menu styles */
 .navigation a{
+	color:#f2f2f2;
+	text-decoration:none; /* removing the link underline */
 	float:left;
 	text-align:center;
 	padding:14px 16px;
@@ -74,6 +75,9 @@ body{
 
 
 /* Blog post related styles*/
+.container{
+	margin-top: 70px;
+}
 .blog-container{
 	position:relative;
 	left:300px;
@@ -98,10 +102,15 @@ margin-bottom:0; /* setting margin to 0 so that there is no space between title 
 
 /* Categories related styles*/
 .categories{
+
 	position:absolute;
 	left:10px;
 	width: 280px;
 	border-right: 2px solid;
+}
+
+.categories h2{
+	margin: 0;
 }
 
 .categories-list a {
