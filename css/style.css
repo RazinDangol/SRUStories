@@ -1,6 +1,7 @@
 
 /*Changing the default font to 25px and margin to 0*/
 body{
+	font-family: Roboto,Arial,sans-serif;
 	font-size: 25px;
 	margin:0;
 	background-repeat:no-repeat;/* setting the image to no repeat */
@@ -14,6 +15,7 @@ body{
 .header{
 	background-color:#007055;
 	width: 100%;
+	height: 70px;
 	position: fixed;
 	top: 0;
 	overflow: hidden;
@@ -36,6 +38,7 @@ body{
 }
 
 /* navigation menu styles */
+
 .navigation a{
 	color:#f2f2f2;
 	text-decoration:none; /* removing the link underline */
@@ -57,20 +60,39 @@ body{
 	margin:0;/* setting the margin of the box to 0*/
 	padding-top:10px; /* setting upper padding to 10 to align with other elements */
 	width:400px;
+	position:relative
 }
 /* input box inside search id */
+
 #search input{
-	width:300px;
+	width:130px;
+	
 	height: 40px;
-	border:none;/* removing the border */
+	border:2px solid #9fcbb5;
+	border-radius: 5px;
+	float:right;
+	transition: width 0.4s ease-in-out;
+	position:relative;
+	margin-right: 62px;
 }
+#search input:focus{
+	width:80%;
+}
+#search form{
+	
+}
+
+
 /* submit button of the search box */
 #search button{
 	border:none;
 	background:#f2f2f2;
-	height:40px;
+	height:46px;
 	width: 60px;
 	font-size:15px;
+	right:0;
+	position:absolute;
+	border-radius:5px;
 }
 
 
