@@ -2,7 +2,7 @@
 /*Changing the default font to 25px and margin to 0*/
 body{
 	font-family: Roboto,Arial,sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	margin:0;
 	background-repeat:no-repeat;/* setting the image to no repeat */
 	background-position:center;/* positioning the image to center of the page */
@@ -16,9 +16,11 @@ body{
 	background-color:#007055;
 	width: 100%;
 	height: 70px;
+	font-size: 25px;
 	position: fixed;
-	top: 0;
 	overflow: hidden;
+	margin:0;
+	top:50px;
 	z-index:1; /* Setting the header infront of body content */
 }
 /* 
@@ -45,6 +47,7 @@ body{
 	float:left;
 	text-align:center;
 	padding:14px 16px;
+	height:70px;
 }
 
 .login{
@@ -66,15 +69,15 @@ body{
 
 #search input{
 	width:130px;
-	
 	height: 40px;
 	border:2px solid #9fcbb5;
 	border-radius: 5px;
 	float:right;
-	transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out; /* css animation */
 	position:relative;
 	margin-right: 62px;
 }
+
 #search input:focus{
 	width:80%;
 }
@@ -99,7 +102,7 @@ body{
 .blog-container{
 	position:relative;
 	left:300px;
-	width: 70%;
+	max-width: 60%;
 }
 .blog{
 	border-bottom: 2px dashed; /* setting the bottom border of each blog post to 2px dashed to separate it from another blog post */
@@ -120,8 +123,7 @@ margin-bottom:0; /* setting margin to 0 so that there is no space between title 
 
 /* Categories related styles*/
 .categories{
-
-	position:absolute;
+	position:fixed;
 	left:10px;
 	width: 280px;
 	border-right: 2px solid;
@@ -138,4 +140,36 @@ margin-bottom:0; /* setting margin to 0 so that there is no space between title 
 /* Moving the older-post to right side of the page */
 #older-post{
 	float:right;
+}
+div#message{
+width:100%;
+height: 50px;
+position:fixed;
+background-color: #00BCD4;
+color: #ffffff;
+top:0;
+overflow:hidden;
+z-index:1;
+visibility: hidden;
+}
+
+p#msg{
+	text-align: left;
+	margin-right:20px;
+	margin-left:20px;
+}
+#close{
+	float:right;
+	color: #ffffff;
+	border-radius: 30px;
+	background-color: #ffffff;
+}
+
+.nav-highlight{
+	background-color: #272c29;
+	color: #ffffff;
+}
+
+.header-top{
+	top:0px;
 }
