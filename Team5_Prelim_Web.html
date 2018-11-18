@@ -15,8 +15,21 @@
 <body>
 	<div id="message">
 		<p id ="msg">Unfortunately this browser is not supported please use <a href="https://www.google.com/chrome/b/">Google Chrome</a>
-		<button id="close">X</button>
+		<span id="close">&times;</span>
 		</p>
+	</div>
+	<div id="login-form">
+		<form action="#">
+			<span class="form-close" id="login-close">&times;</span>
+			<div class="form-container">
+
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username">
+				<label for="password"><b>Password</b></label>
+				<input type="text" placeholder="Enter Password" name="password">
+				<button type="submit">Login</button>
+			</div>
+		</form>
 	</div>
 	<!-- header is the top bar of the page which provides menu, search and login option -->
 	<div class="header" id="header">
@@ -28,10 +41,7 @@
 			<a href="/archive">Archive</a>
 			<a href="/events">Events</a>
 			<a href="/about">About</a>
-			<!-- redirects to login page -->
-			<div class="login">
-				<a href="/login">Login</a>
-			</div>
+			<button id="login-btn" class="login">Login</button>
 			<!-- Search bar with submit button -->
 			<div id="search">
 				<form action="#">
@@ -57,7 +67,17 @@
 				</ul>
 			</div>
 		</div>
-
+		<!-- Survey section of the blog, at the top right of the page -->
+		<div class="survey">
+			<h2>Survey</h2>
+			<!-- survey list --> 
+			<div id="surveyarea" class="survey-choice">
+                    <p>Which would you like to see next? <br>
+					<input type="radio" name="survey" id="academicsrad"> academics <br>
+					<input type="radio" name="survey" id="collegeliferad"> college life <br>
+					<input type="radio" name="survey" id="clubsrad"> clubs </p>
+			</div>
+		</div>
 		<!-- Blog container which contains various blog posts -->
 		<div class="blog-container">
 			<!-- An individual blog post -->

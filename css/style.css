@@ -50,13 +50,6 @@ body{
 	height:70px;
 }
 
-.login{
-	float: right;
-	width: 200px;
-	margin:0;
-
-}
-
 /* Search box specific styles */
 #search{
 	float:right;/* moving the box to the right of the menu bar */
@@ -137,10 +130,27 @@ margin-bottom:0; /* setting margin to 0 so that there is no space between title 
 	text-decoration:none;
 }
 
+/* Survey related Styles*/
+.survey{
+	position:fixed;
+	right:10px;
+	width: 260px;
+    border-left: 2px solid;
+    text-align: center
+    }
+.survey h2{
+    margin: 0;
+}
+.survey-choice{
+    text-decoration:none;
+}
+
 /* Moving the older-post to right side of the page */
 #older-post{
 	float:right;
 }
+
+/* Unsupported browser message specific styles */
 div#message{
 width:100%;
 height: 50px;
@@ -158,13 +168,18 @@ p#msg{
 	margin-right:20px;
 	margin-left:20px;
 }
+/* Close the message */
 #close{
-	float:right;
+	position:absolute;
+	right:25px;
 	color: #ffffff;
-	border-radius: 30px;
-	background-color: #ffffff;
+	font-size:35px;
+	font-weight:bold;
+	top:0;
+	cursor:pointer;
 }
 
+/* Highlights the navbar item */
 .nav-highlight{
 	background-color: #272c29;
 	color: #ffffff;
@@ -172,4 +187,71 @@ p#msg{
 
 .header-top{
 	top:0px;
+}
+
+/* Login form */
+
+.login{
+	float: right;
+	width: 60px;
+	height: 46px;
+	margin:10px;
+	background-color: #4CAF50;
+	cursor:pointer;
+	border:none;
+	color:white;
+	border-radius:5px;
+
+}
+#login-form{
+	display:none; /* none by default */
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 70px;
+}
+
+#login-form form{
+	margin: 5% auto 15% auto;
+	border: 1px solid #f1f1f1;
+	width:500px;
+	background-color:#fefefe;
+}
+
+.form-container{
+	padding: 30px 15px 15px 15px;
+	
+}
+
+#login-form input{
+	width:100%;
+	padding: 12px 20px;
+	display:inline-block;
+	border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#login-form button{
+	background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/* Closes the form */
+.form-close{
+	float:right;
+	position:relative;
+	top: 0;
+	padding:0px 10px;
+	cursor:pointer;
+	font-size:35px;
+	font-weight:bold;
 }
