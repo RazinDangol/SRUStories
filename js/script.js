@@ -34,6 +34,13 @@ window.onload = function(){
 			formClose();
 		}
 	}
+
+	// Add and remove highlight class to blog when mouse enter 
+	var blogs = $$("div.blog");
+	for(var i = 0; i < blogs.length; i++){
+		blogs[i].onmouseover = blogMouseOver;
+		blogs[i].onmouseout = blogMouseOut;
+	}
 };
 
 // highlight the navbar item when mouse hover
@@ -66,3 +73,12 @@ function formClose(){
 	$("login-form").style.display = "none";
 }
 
+// Add the highlight class when the mouse hovers over the blog post
+function blogMouseOver(){
+	this.addClassName("blog-highlight");
+}
+
+// Remove the highlight class when the mouse exists the blog post region
+function blogMouseOut(){
+	this.removeClassName("blog-highlight");
+}

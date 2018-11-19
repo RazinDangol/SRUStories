@@ -1,12 +1,38 @@
+<!-- SRUStories 
+	Team Member: Rajin Dangol
+				 Jordon Varnar
+				 Prajwal Ghimire
+-->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tips to be successful in college</title>
-	<link rel="stylesheet" type="text/css" href="./css/blog-style.css">
+	<title>SRU Stories Blog</title>
+	<!-- Linking external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/prototype.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
+	<div id="message">
+		<p id ="msg">Unfortunately this browser is not supported please use <a href="https://www.google.com/chrome/b/">Google Chrome</a>
+		<span id="close">&times;</span>
+		</p>
+	</div>
+	<div id="login-form">
+		<form action="#">
+			<span class="form-close" id="login-close">&times;</span>
+			<div class="form-container">
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter SRU email" name="email">
+				<label for="password"><b>Password</b></label>
+				<input type="text" placeholder="Enter Password" name="password">
+				<button type="submit">Login</button>
+			</div>
+		</form>
+	</div>
 	<!-- header is the top bar of the page which provides menu, search and login option -->
-	<div class="header">
+	<div class="header" id="header">
 		<!-- Logo of the Blog -->
 		<h3 id="logo">Sru Stories</h3>
 		<!-- Navigation menu of the blog -->
@@ -15,21 +41,46 @@
 			<a href="/archive">Archive</a>
 			<a href="/events">Events</a>
 			<a href="/about">About</a>
-			<!-- redirects to login page -->
-			<div class="login">
-				<a href="/login">Login</a>
-			</div>
+			<button id="login-btn" class="login">Login</button>
 			<!-- Search bar with submit button -->
 			<div id="search">
 				<form action="#">
+					
 					<input type="text" name="search-text" placeholder="Search">
+				
 					<button type="submit">Search</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<div class="blog-container">
+	
+	<!-- Categories section of the blog which is at the left of the page -->
+	<div class="container">
+		<div class="categories">
+			<h2>Categories</h2>
+			<!-- List of categories --> 
+			<div class="categories-list">
+				<ul>
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">College Life</a></li>
+					<li><a href="#">Clubs</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Survey section of the blog, at the top right of the page -->
+		<div class="survey">
+			<h2>Survey</h2>
+			<!-- survey list --> 
+			<div id="surveyarea" class="survey-choice">
+                    <p>Which would you like to see next? <br>
+					<input type="radio" name="survey" id="academicsrad"> academics <br>
+					<input type="radio" name="survey" id="collegeliferad"> college life <br>
+					<input type="radio" name="survey" id="clubsrad"> clubs </p>
+			</div>
+		</div>
+		<div class="blog-container">
 			<!-- An individual blog post -->
+		
 			<div class="blog">
 				<!-- Title of the blog -->
 				<h2 class="blog-title">Tips to be successful in college</h2>
@@ -41,9 +92,8 @@
 				Augue mauris augue neque gravida in fermentum et sollicitudin. Tristique senectus et netus et malesuada fames. Nunc aliquet bibendum enim facilisis. Proin sed libero enim sed faucibus. Parturient montes nascetur ridiculus mus. Amet commodo nulla facilisi nullam. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus elementum sagittis vitae et leo. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Iaculis nunc sed augue lacus viverra vitae congue. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Tincidunt vitae semper quis lectus nulla at volutpat diam. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
 					
 				</p>
-
 			</div>
-	
 
+		</div>
 </body>
 </html>

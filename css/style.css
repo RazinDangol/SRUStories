@@ -99,7 +99,11 @@ body{
 }
 .blog{
 	border-bottom: 2px dashed; /* setting the bottom border of each blog post to 2px dashed to separate it from another blog post */
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	padding: 5px 20px 10px 20px;
 }
+	
+
 
 .blog-title{
 margin-bottom:0; /* setting margin to 0 so that there is no space between title and blog detail like authors */
@@ -110,8 +114,22 @@ margin-bottom:0; /* setting margin to 0 so that there is no space between title 
 	padding:0;
 	margin:0;
 }
-.blog-author a{
+.blog a{
 	text-decoration: none;
+	color: #4ca6cf;
+}
+
+.blog-title>a{
+	color: #223622;
+}
+
+.blog-title>a:hover{
+color: #078ab4e8;
+}
+
+.blog-highlight{
+	height:110%;
+	font-size: 25px;
 }
 
 /* Categories related styles*/
